@@ -4,9 +4,7 @@ root = os.getcwd()
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-# from selenium.webdriver.common.keys import Keys
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as ec
+
 import time
 
 driver_path = '/Users/davidchung/desktop/chromedriver'
@@ -18,8 +16,8 @@ if not os.path.isdir(imgs_path):
     os.mkdir(imgs_path)
 
 #  Import pokemon dataframe, get list of pokemon to import (Kanto only)
-pokemon = pd.read_csv('pokemon.csv')
-poke_list = pokemon.Name.values[:151]
+# pokemon = pd.read_csv('pokemon.csv')
+# poke_list = pokemon.Name.values[:151]
 poke_list = ['bulbasaur', 'charmander', 'squirtle', 'ivysaur', 'charmeleon', 'wartortle', 'venusaur', 'charizard', 'blastoise']
 for query in poke_list:  #  Make directory for each query
     if query in ['bulbasaur', 'charmander']:
