@@ -19,9 +19,7 @@ jupyterlab-pygments==0.1.2
 kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
 mccabe==0.6.1
-mkl-fft==1.2.0
-mkl-random==1.1.1
-mkl-service==2.3.0
+
 nbformat==5.0.7
 nest-asyncio==1.4.1
 olefile==0.46
